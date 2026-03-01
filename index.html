@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Gato do Mar — Guest House · Viana do Castelo</title>
+  <meta name="description" content="A peaceful eco wooden guest house in Viana do Castelo, Portugal. 2km from Amorosa beach. Book on Airbnb or Booking.com.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="assets/photos/logo.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <img src="assets/photos/logo.jpg" alt="O Gato do Mar" class="nav-logo-img">
+    <span>O Gato do Mar</span>
+  </a>
+  <div class="nav-center">
+    <ul class="nav-links">
+      <li><a href="#about" data-i18n="nav.home">Home</a></li>
+      <li><a href="#rooms" data-i18n="nav.rooms">Rooms</a></li>
+      <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+      <li><a href="#host" data-i18n="nav.host">About</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li><a href="#contacts" data-i18n="nav.contacts">Contacts</a></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="pt">PT</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="it">IT</button>
+    </div>
+    <a href="https://www.airbnb.com/rooms/1382712120971202539" target="_blank" class="btn-book" data-i18n="nav.book">Book Now</a>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div id="mobile-menu" class="mobile-menu">
+  <ul>
+    <li><a href="#about" data-i18n="nav.home">Home</a></li>
+    <li><a href="#rooms" data-i18n="nav.rooms">Rooms</a></li>
+    <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+    <li><a href="#host" data-i18n="nav.host">About</a></li>
+    <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+    <li><a href="#contacts" data-i18n="nav.contacts">Contacts</a></li>
+  </ul>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="pt">PT</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="it">IT</button>
+  </div>
+  <a href="https://www.airbnb.com/rooms/1382712120971202539" target="_blank" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+</div>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section id="home" class="hero">
+  <!--
+    TO ADD YOUR HERO PHOTO:
+    In style.css find ".hero" and uncomment:
+    background-image: url('images/hero.jpg');
+  -->
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <p class="hero-pretitle" data-i18n="hero.pretitle">Guest House · Viana do Castelo · Portugal</p>
+    <h1 class="hero-title">O Gato do Mar</h1>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">A peaceful wooden retreat nestled in nature, just a short walk from the white sandy beach.</p>
+    <div class="hero-btns">
+      <a href="https://www.airbnb.com/rooms/1382712120971202539" class="btn btn-light" target="_blank" data-i18n="hero.airbnb">Book on Airbnb</a>
+      <a href="https://www.booking.com/hotel/pt/o-gato-do-mar.it.html" class="btn btn-primary" target="_blank" data-i18n="hero.booking">Book on Booking.com</a>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+<section id="about" class="about section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img reveal">
+        <!--
+          TO ADD PHOTO: replace the div below with:
+          <img src="images/house.jpg" alt="O Gato do Mar exterior" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+        -->
+        <div class="photo-box house-photo"></div>
+      </div>
+      <div class="about-text reveal delay-1">
+        <span class="eyebrow" data-i18n="about.label">The Place</span>
+        <h2 data-i18n="about.title">An Eco Retreat in the Heart of Nature</h2>
+        <p data-i18n="about.desc1">Welcome to our Eco House in Viana do Castelo — a peaceful wooden retreat nestled in nature, just a short walk from the white sandy beach. Fall asleep to the calming ocean sound and wake up surrounded by trees and birdsong.</p>
+        <p data-i18n="about.desc2">Whether you're stopping by during your Camino de Santiago journey or planning a cozy and romantic weekend, this is the perfect spot to unwind. The house is fully equipped with everything you need.</p>
+        <div class="features-row">
+          <div class="feature-chip">
+            <span class="chip-icon">🌊</span>
+            <span data-i18n="about.feat1">2 km from beach</span>
+          </div>
+          <div class="feature-chip">
+            <span class="chip-icon">🌲</span>
+            <span data-i18n="about.feat2">Eco wooden house</span>
+          </div>
+          <div class="feature-chip">
+            <span class="chip-icon">🚴</span>
+            <span data-i18n="about.feat3">Bikes available</span>
+          </div>
+          <div class="feature-chip">
+            <span class="chip-icon">🧘</span>
+            <span data-i18n="about.feat4">Zen atmosphere</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ ROOMS ═══════════════════════════════ -->
+<section id="rooms" class="rooms section bg-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="rooms.label">Accommodations</span>
+      <h2 data-i18n="rooms.title">Our Rooms</h2>
+    </div>
+    <div class="rooms-grid">
+
+      <!-- O Gato do Campo -->
+      <div class="room-card reveal">
+        <div class="room-gallery">
+          <!--
+            TO ADD PHOTOS replace photo-box divs with:
+            <img src="images/campo-main.jpg" ...>
+            <img src="images/campo-2.jpg" ...>
+            <img src="images/campo-3.jpg" ...>
+          -->
+          <div class="room-img-main photo-box campo-photo"></div>
+          <div class="room-img-side">
+            <div class="photo-box campo-photo-2"></div>
+            <div class="photo-box campo-photo-3"></div>
+          </div>
+        </div>
+        <div class="room-body">
+          <div>
+            <h3>O Gato do Campo</h3>
+            <span class="room-tag" data-i18n="rooms.campo.tag">Quiet &amp; Magical</span>
+            <p data-i18n="rooms.campo.desc">A serene retreat surrounded by nature, where peace and tranquility invite you to slow down and simply be.</p>
+          </div>
+          <a href="https://www.airbnb.com/rooms/1382712120971202539" class="btn btn-primary" target="_blank" data-i18n="rooms.book">Check Availability</a>
+        </div>
+      </div>
+
+      <!-- O Gato do Mar -->
+      <div class="room-card reveal delay-1">
+        <div class="room-gallery">
+          <div class="room-img-main photo-box mar-photo"></div>
+          <div class="room-img-side">
+            <div class="photo-box mar-photo-2"></div>
+            <div class="photo-box mar-photo-3"></div>
+          </div>
+        </div>
+        <div class="room-body">
+          <div>
+            <h3>O Gato do Mar</h3>
+            <span class="room-tag" data-i18n="rooms.mar.tag">Spiritual &amp; Relaxing</span>
+            <p data-i18n="rooms.mar.desc">A soulful space that connects you to the rhythm of the ocean, perfect for rest, reflection, and renewal.</p>
+          </div>
+          <a href="https://www.booking.com/hotel/pt/o-gato-do-mar.it.html" class="btn btn-primary" target="_blank" data-i18n="rooms.book">Check Availability</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TESTIMONIALS ═══════════════════════════════ -->
+<section id="testimonials" class="testimonials section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="testimonials.label">Guest Feedback</span>
+      <h2 data-i18n="testimonials.title">What Our Guests Say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="t-text">"The natural wooden setting is absolutely beautiful. Waking up to birdsong and a fresh ocean breeze was magical. A truly unique place."</p>
+        <span class="t-author">— Airbnb Guest</span>
+      </div>
+      <div class="testimonial-card reveal delay-1">
+        <div class="stars">★★★★★</div>
+        <p class="t-text">"A pleasant and quiet stopover on the Camino de Santiago. Brigita is a wonderful, welcoming host. I felt at home from the first minute."</p>
+        <span class="t-author">— Pilgrim from France</span>
+      </div>
+      <div class="testimonial-card reveal delay-2">
+        <div class="stars">★★★★★</div>
+        <p class="t-text">"Nice quiet stay in a great atmosphere. The wooden house surrounded by nature is something special. Highly recommended."</p>
+        <span class="t-author">— Booking.com Guest</span>
+      </div>
+      <div class="testimonial-card reveal delay-3">
+        <div class="stars">★★★★★</div>
+        <p class="t-text">"The pleasant atmosphere and perfect amenities made our weekend unforgettable. We will definitely come back!"</p>
+        <span class="t-author">— Couple from Spain</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ HOST ═══════════════════════════════ -->
+<section id="host" class="host section bg-alt">
+  <div class="container">
+    <div class="host-grid">
+      <div class="host-photo-col reveal">
+        <!--
+          TO ADD PHOTOS:
+          Replace photo-box divs with <img> tags.
+          Brigita portrait → images/brigita.jpg
+          Building photos → images/brigita-2.jpg, images/brigita-3.jpg
+        -->
+        <div class="photo-box host-photo tall-photo"></div>
+        <div class="host-photos-row">
+          <div class="photo-box host-photo-2"></div>
+          <div class="photo-box host-photo-3"></div>
+          <div class="photo-box host-photo-4"></div>
+        </div>
+      </div>
+      <div class="host-text reveal delay-1">
+        <span class="eyebrow" data-i18n="host.label">Your Host</span>
+        <h2 data-i18n="host.name">Brigita Januskeviciute</h2>
+        <blockquote data-i18n="host.quote1">"As a passionate traveler, I've drawn inspiration from my journeys to create a peaceful and idyllic space for deep physical and mental well-being."</blockquote>
+        <p data-i18n="host.desc1">This place is born from a dream — a Zen-inspired retreat where calm, nature, and simplicity bring you back to yourself.</p>
+        <p data-i18n="host.desc2">My goal was to craft a serene, spiritual haven where every guest can reconnect with what truly matters.</p>
+        <div class="moto-block">
+          <div class="moto-thumb">
+            <img src="assets/photos/unnamed12.jpg" alt="Brigita on motorcycle">
+          </div>
+          <div>
+            <h4 data-i18n="host.moto.title">Motorcycle Lover</h4>
+            <p data-i18n="host.moto.desc">Riding is my freedom, my therapy, my adventure. All bikers are warmly welcomed — park your motorbike safely in our private courtyard.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ GALLERY ═══════════════════════════════ -->
+<section id="gallery" class="gallery section bg-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="gallery.label">Photos</span>
+      <h2 data-i18n="gallery.title">Gallery</h2>
+    </div>
+    <div class="gallery-grid reveal" id="galleryGrid">
+      <!-- Popolato automaticamente da IMG.gallery in script.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FAQ ═══════════════════════════════ -->
+<section id="faq" class="faq section">
+  <div class="container container-narrow">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="faq.label">Questions</span>
+      <h2 data-i18n="faq.title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list" id="faqList">
+      <!-- Generated by script.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CONTACTS ═══════════════════════════════ -->
+<section id="contacts" class="contacts section bg-dark">
+  <div class="container">
+    <div class="contacts-grid">
+      <div class="contacts-info reveal">
+        <span class="eyebrow eyebrow-light" data-i18n="contacts.label">Get in Touch</span>
+        <h2 class="text-light" data-i18n="contacts.title">Find Us</h2>
+        <ul class="contact-list">
+          <li>
+            <span class="c-icon">📍</span>
+            <span>Caminho da Corga 35, 4935-581 Chafé,<br>Viana do Castelo, Portugal</span>
+          </li>
+          <li>
+            <span class="c-icon">✉</span>
+            <a href="mailto:ogatodomarhouse@gmail.com">ogatodomarhouse@gmail.com</a>
+          </li>
+          <li>
+            <span class="c-icon">📞</span>
+            <a href="tel:+393801995427">+39 380 199 5427</a>
+          </li>
+          <li>
+            <span class="c-icon">💬</span>
+            <a href="https://wa.me/393391024202" target="_blank">WhatsApp: +39 339 102 4202</a>
+          </li>
+          <li>
+            <span class="c-icon">🕐</span>
+            <span data-i18n="contacts.hours">Open daily 9:30 – 22:30</span>
+          </li>
+        </ul>
+        <div class="contact-btns">
+          <a href="https://www.airbnb.com/rooms/1382712120971202539" class="btn btn-light" target="_blank" data-i18n="hero.airbnb">Book on Airbnb</a>
+          <a href="https://www.booking.com/hotel/pt/o-gato-do-mar.it.html" class="btn btn-primary" target="_blank" data-i18n="hero.booking">Book on Booking.com</a>
+        </div>
+      </div>
+      <div class="contacts-map reveal delay-1">
+        <iframe
+          src="https://maps.google.com/maps?q=Caminho+da+Corga+35,+4935-581+Chaf%C3%A9,+Portugal&output=embed&z=15"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="O Gato do Mar location">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <img src="assets/photos/logo.jpg" alt="O Gato do Mar" class="footer-logo-img">
+          <span class="footer-logo">O Gato do Mar</span>
+        </div>
+        <p data-i18n="footer.tagline">A Zen retreat in the heart of nature — Viana do Castelo, Portugal.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about" data-i18n="nav.home">Home</a>
+        <a href="#rooms" data-i18n="nav.rooms">Rooms</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#host" data-i18n="nav.host">About</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="#contacts" data-i18n="nav.contacts">Contacts</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 O Gato do Mar &nbsp;·&nbsp; <a href="mailto:ogatodomarhouse@gmail.com">ogatodomarhouse@gmail.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
